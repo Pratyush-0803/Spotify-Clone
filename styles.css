@@ -16,7 +16,137 @@
 .leftnav{
     height: 100%;
     width: 41%;
-    border: 1px solid white;
+    display: flex;
+    align-items: stretch;
+}
+
+.logocnt{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotilogo{
+    height: 27px;
+    width: 27px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.homecnt{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roundcnt{
+    background-color: rgb(39, 36, 36);
+    padding: 9px;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    transition: all 0.01s ease-in-out;
+    cursor: pointer;
+}
+
+.roundcnt:hover{
+    transform: scale(1.06);
+    background-color: rgb(64, 59, 59);
+}
+
+.roundcnt:hover .homeimg{
+    background-color: rgb(64, 59, 59);
+}
+
+.homeimg{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(39, 36, 36);
+    transition: all 0s;
+}
+
+.searchbarcnt{
+    width: 78%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar{
+    display: flex;
+    width: 97%;
+    background-color: #1e1e1e;
+    border-radius: 100px;
+    height: 83%;
+    align-items: center;
+    padding: 6px 9px;
+    gap: 12px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchbar:hover{
+    background-color: #3a3939;
+    box-shadow: 0 2px 6px rgba(74, 72, 72, 0.4);;
+}
+
+.searchbar:hover .browseicon,
+.searchbar:hover .browseiconcnt{
+    background-color: #3a3939;
+}
+
+.searchbar:hover .searchicon{
+    background-color: #3a3939;
+    content: url("assets/search2.svg");
+}
+
+.searchbar input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchbar input::placeholder{
+    text-shadow: 0.2px 0 #928a8a;
+    color: #928a8a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchicon{
+    height: 20px;
+    width: 20px;
+    opacity: 0.7;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.browseicon{
+    height: 20px;
+    width: 20px;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.browseiconcnt{
+    border-left: 1.5px solid rgb(188, 177, 177);
+    width: 10%;
+    display: flex;
+    background-color: #1e1e1e;
+    transition: all 0.3s ease-in-out;
 }
 
 .rightnav{
@@ -29,24 +159,27 @@
 
 .options{
     width: 42.5%;
-    height: 60%;
-    border-right: 2px solid white;
+    height: 50%;
+    border-right: 1.5px solid white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.3rem;
 }
 
 .optionitem{
     color: rgb(189, 183, 183);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     align-items: center;
-    font-size: 13.5px;
+    font-size: 12px;
+    padding:3px;
     font-weight: 600;
+    height: 100%;
 }
 
 .buttons{
     width: 57.5%;
-    height: 90%;
+    height: 87%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -59,14 +192,29 @@
     font-size: 10px;
     font-weight: 700;
     display: flex;
+    padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.installapp:hover{
+    color: white;
+    font-size: 11px;
+    transform: translateY(-2%);
+} 
+
+.installapp:hover .installlogo{
+    content: url("assets/install2.svg");
+    height: 14px;
+    width: 14px;
 }
 
 .installlogo{
     height: 13.5px;
     width: 13.5px;
-    margin-left: 23px;
+    margin-left: 20px;
     margin-right: 5px;
 }
 
@@ -75,10 +223,18 @@
     width: 20%;
     color: rgb(189, 183, 183);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 10.8px;
     font-weight: 600;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.signUp:hover{
+    color: white;
+    font-size: 11.2px;
 }
 
 .logIn{
@@ -87,15 +243,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .loginbtn{
-    color: rgb(46, 41, 41);
+    color: rgb(25, 22, 22);
     background-color: white;
-    width: 87px;
+    width: 85px;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background-color: rgba(255, 253, 253, 0.949);
+    transform: scale(1.05);
+
 }

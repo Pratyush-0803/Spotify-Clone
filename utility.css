@@ -1,3 +1,13 @@
-.border-white{
+.border{
     border: 1px solid white;
+}
+
+.inc{
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.inc:hover span{
+    color: white;
+    transform: scale(1.02) translateY(-3%);
 }
