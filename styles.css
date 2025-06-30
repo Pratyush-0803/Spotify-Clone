@@ -238,7 +238,7 @@
 }
 
 .logIn{
-    height: 100%;
+    height: 99%;
     width: 40%;
     display: flex;
     align-items: center;
@@ -267,19 +267,20 @@
 
 .maincnt{
     margin-top: 1px;
-    height: 500px;
+    height: 450px;
     display: flex;
 }
 
 .leftpart{
     width: 27.5%;
     background-color: rgb(15, 15, 15);
-    border-radius: 10px;
+    border-radius: 6px;
     margin-left: 6.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    height: 98.5%;
 }
 
 .library{
@@ -291,7 +292,7 @@
     padding-left: 15px;
     padding-right: 14px;
     padding-bottom: 12px;
-    align-items: center;
+    align-items: center;    
 }
 
 .libtext{
@@ -334,8 +335,10 @@
 .playlistwrapper{
     position: relative;
     width: 100%;
-    height:45%;
+    height:50%;
     overflow: hidden;
+    background-color: rgb(15, 15, 15);
+    
 }
 
 .playlist{
@@ -452,11 +455,12 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
+    overflow: hidden;
 }
 
 .otheroptionsitem{
     font-family: 'SpotifyMixUITitleVariable', sans-serif;
-    color: white;
     font-size: 1px;
     transform: scale(0.9);
     background-color: rgb(15, 15, 15);
@@ -499,4 +503,62 @@
 
 .cookies:hover{
     text-decoration: underline;
+}
+
+.langimg{
+    height: 13px;
+    width: 13px;
+}
+
+.language{
+    background-color: rgb(15, 15, 15);
+    margin-top: 26px;
+}
+
+.langbtn{
+    border: 1px solid rgb(150, 148, 148);
+    margin-left: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 5px;
+    background-color: rgb(15, 15, 15);
+    font-family: 'SpotifyMixUI', sans-serif;
+    font-size: 11.2px;
+    font-weight: 600;
+    width: 79px;
+    height: 24px;
+    border-radius: 13px;
+    padding-bottom: 1px;
+    transition: all 0.1s ease-in-out;
+}
+
+.langbtn:hover{
+    transform: scale(1.05);
+    border: 1px solid white;
+}
+
+.rightpart{
+    width: 70.9%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 6px;
+    margin-left: 6.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 98.5%;
+}
+
+
+
+
+
+.player{
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    height: 57px;
 }
