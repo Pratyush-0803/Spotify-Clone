@@ -11,3 +11,31 @@
     color: white;
     transform: scale(1.02) translateY(-3%);
 }
+
+@font-face {
+  font-family: 'SpotifyMixUI';
+  src: url('https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpotifyMixUI';
+  src: url('https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpotifyMixUITitleVariable';
+  src: url('https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2') format('woff2');
+  font-weight: 400 700; /* variable weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+.mbottom{
+  margin-bottom: 18px;
+}
